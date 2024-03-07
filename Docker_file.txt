@@ -1,0 +1,7 @@
+FROM ubuntu
+MAINTAINER prashanthi@gmail.com
+RUN apt-get update
+RUN apt-get install java -y
+CMD ["echo", "image created"]
+COPY [/root/.jar files]
+EXPOSE 8080
